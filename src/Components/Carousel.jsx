@@ -19,13 +19,13 @@ const Carousel = () => {
       scrollbar={{draggable: false}}
     >
       <SwiperSlide>
-        <div className=' h-72 w-screen bg-red-500 mt-10'>Slide 1</div>
+        <div className=' h-72 w-screen bg-red-500 mt-20'>Slide 1</div>
       </SwiperSlide>
       <SwiperSlide>
-      <div className='h-72 w-screen bg-orange-500 mt-10'>Slide 2</div>
+      <div className='h-72 w-screen bg-orange-500 mt-20'>Slide 2</div>
       </SwiperSlide>
       <SwiperSlide>
-      <div className='h-72 w-screen bg-green-500 mt-10'>Slide 3</div>
+      <div className='h-72 w-screen bg-green-500 mt-20'>Slide 3</div>
       </SwiperSlide>
     </Swiper>
   )

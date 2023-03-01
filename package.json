@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@ionic/react": "^6.5.6",
     "autoprefixer": "^10.4.13",
     "ionic-react": "^0.0.0",
     "ionicons": "^6.1.3",

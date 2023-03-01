@@ -2,6 +2,8 @@ import React from 'react'
 import Fake from '../Data/Fake'
 
 const Products = () => {
+
+
   return (
     <div className='mt-20'>
       <h1 className='text-center text-2xl mb-6'>Products</h1>
@@ -12,7 +14,10 @@ const Products = () => {
           <div className=' h-44 w-44 overflow-hidden mx-auto mt-6'>
             <img src={item.img} alt={item.name} className='h-full w-full object-cover hover:scale-125 transition-all ease-in-out duration-300'/>
           </div>
-          <h1 className='text-center my-2'>{item.name}</h1>
+          <div className='flex ml-10'>
+          <h1 className=' my-2'>{item.name}</h1>
+          <h1 className='ml-2 my-2'>$10</h1>
+          </div>
         </div>
       ))}
 

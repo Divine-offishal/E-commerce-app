@@ -3,6 +3,7 @@ import './App.css'
 import Navbar from './Navigation/Navbar'
 import MobileNav from './Navigation/MobileNav'
 import AppRoutes from './Routes/AppRoutes'
+import Footer from './Footer/Footer'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <Navbar/>
       <MobileNav/>
       <AppRoutes/>
+      <Footer/>
     </div>
   )
 }

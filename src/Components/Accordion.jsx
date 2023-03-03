@@ -41,7 +41,7 @@ const Accordion = () => {
 
   return (
     <div className='my-32 '>
-      <div className='h-auto w-10/12 bg-slate-500 pt-2 pb-6 mb-2 ml-32'>
+      <div className='h-auto w-10/12 bg-slate-500 pt-2 pb-6 mb-2 md:ml-32 ml-6'>
         
         {AccordionData.map((item, index) => (
           <div key={index} className=' cursor-pointer mb-4'>

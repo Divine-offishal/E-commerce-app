@@ -5,9 +5,9 @@ import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
   return (
-    <div className='h-20 w-screen bg-blue-500 md:flex hidden items-center fixed top-0 left-0 z-50'>
+    <div className='h-20 w-screen text-purple-400 bg-indigo-800 md:flex hidden items-center fixed top-0 left-0 z-50'>
       <NavLink to='/'>
-        <h1 className=' text-4xl font-bold ml-6'>Logo</h1>
+        <h1 className=' text-4xl font-bold ml-6'>Virtual Mall</h1>
       </NavLink>
 
       <div className='flex ml-auto text-lg items-center mr-10'>

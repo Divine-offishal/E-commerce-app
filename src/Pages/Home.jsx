@@ -4,7 +4,6 @@ import Carousel from '../Components/Carousel'
 import Info from '../Components/Info'
 import Products from '../Components/Products'
 import Review from '../Components/Review'
-import Test from './Test'
 
 const Home = () => {
   return (
@@ -14,7 +13,6 @@ const Home = () => {
       <Info/>
       <Accordion/>
       <Review/>
-      <Test/>
     </>
   )
 }

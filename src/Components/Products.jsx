@@ -23,7 +23,7 @@ const Products = () => {
     {products === null ? <h1 className='text-center text-4xl font-bold text-purple-500 animate-pulse'>Loading...</h1> : 
       <div className='flex overflow-x-scroll md:grid grid-cols-3 items-center md:justify-items-center'>
         {products.map((item, index) => (
-          <NavLink to={`/products/${item.title}`} key={index}>
+          <NavLink to={`/products/${item.id}`} key={index}>
             <div  className='mx-8 h-64 w-56 bg-indigo-800 overflow-hidden p-4 rounded-md my-6'>
               <div className=' h-44 w-44 overflow-hidden mx-auto mt-6'>
                 <img src={item.image} alt={item.title} className='h-full w-full object-cover hover:scale-125 transition-all ease-in-out duration-300'/>

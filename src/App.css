@@ -8,3 +8,9 @@
     font-family: 'Kanit', sans-serif;
   }
 }
+
+@layer components {
+  .btn-primary {
+    @apply h-10 w-32 bg-purple-500 text-indigo-800 p-2 font-semibold rounded-md
+  }
+}

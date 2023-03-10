@@ -5,6 +5,7 @@ import { IonIcon } from '@ionic/react'
 import { chevronBackOutline } from 'ionicons/icons'
 import { chevronForwardOutline } from 'ionicons/icons'
 import { Context } from '../Context/Context'
+import toast, { Toaster } from 'react-hot-toast';
 
 const Product = () => {
 
@@ -36,14 +37,20 @@ const Product = () => {
     const handleClick = () => {
 
       Add(SearchData)
-      console.log(items);
+      toast.success('Added to cart', { 
+        duration: 4000,
+        position: 'top-center',})
+      // console.log(items)
     }
     
     return (
-      <div  className='h-screen w-screen mt-32' >
-        <div className='flex'>
-          <img src={SearchData.image} alt={SearchData.title} className='h-72 w-72 m-4'/>
-          <div className=' h-96 w-9/12  bg-indigo-800 p-6'>
+      <div  className='h-screen w-screen md:mt-32 mt-10 mb-10 md:mb-0' >
+        <Toaster/>
+        <div className='md:flex '>
+          <div className='md:w-3/12 w-screen ml-4'>
+            <img src={SearchData.image} alt={SearchData.title} className='h-72 m-4'/>
+          </div>
+          <div className=' h-96 md:w-9/12 w-screen bg-indigo-800 p-6'>
             <h1 className='text-3xl text-purple-400 font-bold ml-4 my-4'>{SearchData.title}</h1>
             <h1 className='text-purple-100'>{SearchData.description}</h1>
             <div className='flex items-center justify-center mt-2'>
@@ -57,9 +64,9 @@ const Product = () => {
                   <h1>1</h1>
                 </div>
 
-                <div className='btn-primary cursor-pointer' onClick={() => handleClick()}>
+                <button className='btn-primary cursor-pointer' onClick={() => handleClick()}>
                     <h1>Add to cart</h1>
-                </div>
+                </button>
                 
               </div>
 

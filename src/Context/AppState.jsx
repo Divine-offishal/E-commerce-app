@@ -5,8 +5,10 @@ import { AddItem, RemoveItem, InitValue } from './Action'
 
 const AppState = (props) => {
 
+  const checkStorage= JSON.parse(localStorage.getItem('item'))
+
   const initialState = {
-    items: []
+    items: checkStorage || []
   }
 
 
@@ -25,17 +27,25 @@ const AppState = (props) => {
   }, [state])
   
   
-  const Add = (item) => {
+  const Add = (item, number) => {
     dispatch({
       type: AddItem,
       payload: item
     })
   } 
 
+  const Remove = (id) => {
+    dispatch({
+      type: RemoveItem,
+      payload: id
+    })
+  }
+
 
   return (
     <Context.Provider value={{
       items: state.items,
+      Remove,
       Add
     }}>
       {props.children}

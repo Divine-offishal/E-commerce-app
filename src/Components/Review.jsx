@@ -27,25 +27,25 @@ const Review = () => {
       }}
       >
       <SwiperSlide>
-        <div className='h-64 w-screen my-10 grid place-items-center bg-green-900'>
-          <div className='h-full w-6/12 bg-red-500'>
-            <h1>This is a Review</h1>
+        <div className='h-64 w-screen md:my-10 mb-20 grid place-items-center'>
+          <div className='h-full md:w-6/12 w-10/12 bg-slate-200 shadow-lg shadow-black'>
+              <h1 className='text-4xl font-medium mt-10 mx-2'>"Smooth transactions and low charges. Kudos to Virtual Mall"</h1>
           </div>
         </div>
       </SwiperSlide>
 
       <SwiperSlide>
-        <div className='h-64 w-screen my-10 grid place-items-center bg-blue-800'>
-        <div className='h-full w-6/12 bg-indigo-500 '>
-            <h1>This is a Review</h1>
+        <div className='h-64 md:w-screen w-10/12 my-10 grid place-items-center'>
+          <div className='h-full md:w-6/12 w-8/12 bg-slate-200 shadow-lg shadow-black'>
+            <h1 className='text-4xl font-medium mt-10 mx-2'>"I love the discount prices...it has helped me save 20% of my money."</h1>
           </div>
         </div>
       </SwiperSlide>
 
       <SwiperSlide>
-        <div className='h-64 w-screen my-10 grid place-items-center bg-orange-900'>
-        <div className='h-full w-6/12 bg-green-500'>
-            <h1>This is a Review</h1>
+        <div className='h-64 w-screen md:my-10 mb-20 grid place-items-center'>
+          <div className='h-full md:w-6/12 w-8/12 bg-slate-200 shadow-lg shadow-black'>
+              <h1 className='text-4xl font-medium mt-10 mx-2'>"Fast delivery rates. I can't recommend Virtual Mall enough"</h1>
           </div>
         </div>
       </SwiperSlide>

@@ -1,7 +1,7 @@
 import React, {useEffect, useReducer, useState} from 'react'
 import { Context } from './Context'
 import Reducer from './Reducer'
-import { AddItem, RemoveItem, InitValue } from './Action'
+import { AddItem, RemoveItem, InitValue, Decrease } from './Action'
 
 const AppState = (props) => {
 
@@ -41,12 +41,20 @@ const AppState = (props) => {
     })
   }
 
+const DecreaseItem = (item) => {
+  dispatch({
+    type: Decrease,
+    payload: item
+  })
+}
+
 
   return (
     <Context.Provider value={{
       items: state.items,
       Remove,
-      Add
+      Add,
+      DecreaseItem
     }}>
       {props.children}
     </Context.Provider>

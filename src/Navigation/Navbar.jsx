@@ -41,9 +41,9 @@ const Navbar = () => {
             <div className='text-3xl'>
               <IonIcon icon={cart} />
             </div>
-            <div className=' absolute top-0 right-0 bg-red-500 text-sm rounded-full text-center text-neutral-50 h-4 w-4'>
+            {lengthOfArray > 0 && <div className=' absolute top-0 right-0 bg-red-500 text-sm rounded-full text-center text-neutral-50 h-4 w-4'>
               <h1>{lengthOfArray}</h1>
-            </div>
+            </div>}
           </div>
         </NavLink>
       </div>

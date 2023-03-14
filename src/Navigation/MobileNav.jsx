@@ -23,9 +23,9 @@ const MobileNav = () => {
           <NavLink to='/cart'>
             <div className='relative'>
               <IonIcon icon={cart} />
-              <div className="absolute top-0 right-0 bg-red-500 text-neutral-50 rounded-full text-sm z-40 h-6 w-6 text-center">
+              {lengthOfArray > 0 && <div className="absolute top-0 right-0 bg-red-500 text-neutral-50 rounded-full text-sm z-40 h-6 w-6 text-center">
                 <h1 className='mt-1'>{lengthOfArray}</h1>
-              </div>
+              </div>}
             </div>
             </NavLink>
 

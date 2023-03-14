@@ -55,23 +55,12 @@ const Product = () => {
             <h1 className='text-purple-100'>{SearchData.description}</h1>
             <div className='flex items-center justify-center mt-2'>
 
-              <div className='text-5xl text-purple-500'>
-                <IonIcon icon={chevronBackOutline}/>
-              </div>
-
               <div className='mt-6'>
-                <div className='h-10 w-20 ml-5 mb-4 bg-purple-500 text-indigo-900 text-center text-4xl font-bold'>
-                  <h1>1</h1>
-                </div>
 
                 <button className='btn-primary cursor-pointer' onClick={() => handleClick()}>
                     <h1>Add to cart</h1>
                 </button>
                 
-              </div>
-
-              <div className='text-5xl text-purple-500'>
-                <IonIcon icon={chevronForwardOutline}/>
               </div>
             </div>
             

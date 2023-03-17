@@ -17,10 +17,14 @@ const MobileNav = () => {
   return (
     <>
       <div className=' h-20 w-screen bg-indigo-800 flex items-center md:hidden px-2 fixed top-0 left-0 z-50'>
-        <h1 className='text-3xl font-bold text-purple-500'>Virtual Mall</h1>
+        <NavLink to='/' className={({isActive}) => 
+            {return isActive? 'text-neutral-50' : 'text-purple-500'}}>
+          <h1 className='text-3xl font-bold text-purple-500'>Virtual Mall</h1>
+        </NavLink>
 
         <div className='text-5xl text-purple-500 ml-auto flex'>
-          <NavLink to='/cart'>
+          <NavLink to='/cart' className={({isActive}) => 
+            {return isActive? 'text-neutral-50' : 'text-purple-500'}}>
             <div className='relative'>
               <IonIcon icon={cart} />
               {lengthOfArray > 0 && <div className="absolute top-0 right-0 bg-red-500 text-neutral-50 rounded-full text-sm z-40 h-6 w-6 text-center">

@@ -35,7 +35,7 @@ const Review = () => {
       </SwiperSlide>
 
       <SwiperSlide>
-        <div className='h-64 md:w-screen w-10/12 my-10 grid place-items-center'>
+        <div className='h-64 md:w-screen w-10/12 md:my-10 mb-20 grid place-items-center'>
           <div className='h-full md:w-6/12 w-8/12 bg-slate-200 shadow-lg shadow-black'>
             <h1 className='text-4xl font-medium mt-10 mx-2'>"I love the discount prices...it has helped me save 20% of my money."</h1>
           </div>

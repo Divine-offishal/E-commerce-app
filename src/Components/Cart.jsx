@@ -63,7 +63,7 @@ const Cart = () => {
       <h1 className='text-5xl text-center font-bold text-indigo-800'>Cart</h1>
       {/* Check if the length of the items is greater than zero to render mapped items else render an empty cart page */}
       { items.length > 0 ? mapped : <EmptyCart/>}
-      <div>
+      <div className='text-center'>
         <h1 className='text-4xl font-bold'>Total: ${Math.round(totalPrice)}</h1>
       </div>
     </div>

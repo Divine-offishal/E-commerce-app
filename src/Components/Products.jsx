@@ -34,8 +34,10 @@ const Products = () => {
                 <img src={item.image} alt={item.title} className='h-full w-full object-cover hover:scale-125 transition-all ease-in-out duration-300'/>
               </div>
               <div className='flex ml-2 overflow-hidden pb-4'>
-              <h1 className=' my-2 text-purple-400 font-semibold text-2xl'>{item.title}</h1>
-              <h1 className='ml-2 my-2'>${item.price}</h1>
+              <h1 className=' my-2 text-purple-400 font-semibold text-2xl'>{item.title.substring(0, 12)}...</h1>
+              <div className='h-auto w-auto p-1 bg-purple-300 text-indigo-800 ml-auto'>
+                <h1 className='ml-2 my-2'>${item.price}</h1>
+              </div>
               </div>
             </div>
           </NavLink>

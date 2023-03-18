@@ -27,10 +27,10 @@ const Cart = () => {
    const mapped = items.map((item, index) => (
     <>
       <div key={index} className='h-44 my-20 w-screen flex'>
-        <div className='w-3/12 ml-10'>
-          <img src={item.image} alt={item.title} className='h-44'/>
-        </div>
-        <div className='mx-4'>
+          <img src={item.image} alt={item.title} className='md:h-64 h-44 md:w-3/12 w-40 m-4 object-fit'/>
+        {/* <div className='w-3/12 ml-10'>
+        </div> */}
+        <div className='mx-4 w-9/12'>
           <h1 className='text-xl font-medium text-indigo-800 my-4'>{item.title}</h1>
           {/* This button removes the item from local storage */}
           <div className='flex'>
@@ -63,8 +63,12 @@ const Cart = () => {
       <h1 className='text-5xl text-center font-bold text-indigo-800'>Cart</h1>
       {/* Check if the length of the items is greater than zero to render mapped items else render an empty cart page */}
       { items.length > 0 ? mapped : <EmptyCart/>}
-      <div className='text-center'>
+      <div className='text-center my-6'>
         <h1 className='text-4xl font-bold'>Total: ${Math.round(totalPrice)}</h1>
+      </div>
+
+      <div className='h-10 w-32 text-purple-500 font-bold text-2xl text-center bg-indigo-800 mx-auto my-10'>
+        <h1>Checkout</h1>
       </div>
     </div>
   )

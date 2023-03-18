@@ -24,21 +24,21 @@ const Carousel = () => {
       <SwiperSlide>
         <div className='  h-96 w-screen md:mt-20 mt-8 flex'>
           <div className=' bg-carousel1 bg-cover text-neutral-50 w-full h-full text-5xl font-semi-bold '>
-            <h1 className='md:mt-32 mt-10'>Get all your gadgets in one go</h1>
+            <h1 className='mt-32'>Get all your gadgets in one go</h1>
           </div>
         </div>
       </SwiperSlide>
       <SwiperSlide>
       <div className=' h-96 w-screen md:mt-20 mt-8 flex'>
         <div className=' bg-carousel2 bg-cover text-neutral-200 text-4xl font-semibold h-full w-full'>
-          <h1 className='md:mt-32 mt-10'>Get the coolest designer jeweries for lower rates</h1>
+          <h1 className='mt-32'>Get the coolest designer jeweries for lower rates</h1>
         </div>
       </div>
       </SwiperSlide>
       <SwiperSlide>
       <div className=' h-96 w-screen md:mt-20 mt-8 flex'>
         <div className='bg-carousel3 bg-cover h-full md:w-full text-neutral-300 font-semibold text-4xl'>
-          <h1 className='md:mt-32 mt-10'>Enjoy fast delivery services</h1>
+          <h1 className='mt-32'>Enjoy fast delivery services</h1>
         </div>
       </div>
       </SwiperSlide>

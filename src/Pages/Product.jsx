@@ -44,13 +44,13 @@ const Product = () => {
     }
     
     return (
-      <div  className='h-screen w-screen md:mt-32 mt-10 mb-10 md:mb-0' >
+      <div  className='h-auto w-screen md:mt-32 mt-20 mb-10 md:mb-0' >
         <Toaster/>
         <div className='md:flex '>
-          <div className='md:w-3/12 w-screen ml-4'>
-            <img src={SearchData.image} alt={SearchData.title} className='h-72 m-4'/>
+          <div className='md:w-3/12 w-screen md:ml-4 '>
+            <img src={SearchData.image} alt={SearchData.title} className='h-72 md:m-4 mx-auto'/>
           </div>
-          <div className=' h-96 md:w-9/12 w-screen bg-indigo-800 p-6'>
+          <div className=' h-auto w-9/12 bg-indigo-800 p-6 mb-20 mx-auto md:mx-0'>
             <h1 className='text-3xl text-purple-400 font-bold ml-4 my-4'>{SearchData.title}</h1>
             <h1 className='text-purple-100'>{SearchData.description}</h1>
             <div className='flex items-center justify-center mt-2'>
